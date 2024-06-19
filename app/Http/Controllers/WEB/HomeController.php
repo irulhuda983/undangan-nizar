@@ -59,7 +59,7 @@ class HomeController extends Controller
                 'tahun' => '2024',
                 'tglText' => 'Selasa, 02 Juli 2024',
                 'tanggalLengkap' => '2024-07-02 12:30:00',
-                'linkKalender' => 'https://www.google.com/calendar/render?action=TEMPLATE&text=Acara%20Pernikahan%20Danifa%20dan%20Saiful&ctz=Asia/Jakarta&dates=20231022T060000/20231031T090000%7D&details=Acara%20Pernikahan%20Danifa%20dan%20Saiful&location=Jalan%20Sitarda%20RT.001/RW.017,%20Pangkah%20Wetan-Gresik,%20Jawatimurt&sprop=&sprop=name:',
+                'linkKalender' => 'https://calendar.google.com/calendar/u/0/r/eventedit?text=Acara+Pernikahan+Nizar+dan+Adi&ctz=Asia/Jakarta&dates=20231022T120000/20240702T150000%7D&details=Acara+Pernikahan+Nizar+dan+Adi&location=Dusun+Kedungmas+RT.+009+RW.+002,+Ds.+Wotanngare+Kec.+kalitidu+Kab.+Bojonegoro+Jawa+Timur&sprop&sprop=name:',
             ],
             'to' => $toName,
             'pengantinWanita' => [
