@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'Halimun';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('@/assets/fonts/Halimun.ttf') format('truetype');
+}
+  
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+  @layer base {
+      html {
+        font-family: 'Source Sans Pro', sans-serif;
+      }
+  
+      .font-dancing {
+        font-family: 'Dancing Script', cursive;
+      }
+  
+      .font-dmsans {
+        font-family: 'DM Sans', sans-serif;
+      }
+  
+      .font-family-caveat {
+        font-family: 'Caveat', cursive;
+      }
+  
+      .font-family-paris {
+        font-family: 'Parisienne', cursive;
+      }
+  
+      .shape-fill, .shapeGalleries, .shapeCountdown {
+        fill: #8a8a8a;
+      }
+  
+      .couple-img {
+        padding: 16% 15% 15%;
+      }
+  
+      .font-family-halimun {
+        font-family: 'Halimun', cursive;
+      }
+  
+      .separator-calon {
+        background-image: url("@/assets/img/separator.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+  
+      .coutdown {
+        background-image: url("@/assets/img/bingkai-save-date.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+  
+      .rundown {
+        background-color: #5a71781c;
+        background-image: url("@/assets/img/bg-rundown.png");
+        background-size: cover;
+        background-position: center;
+      }
+  
+      .galery {
+        background-color: #5a71781c;
+        background-size: cover;
+        background-position: center;
+      }
+  
+      .arrow {
+        width: 0;
+        height: 0;
+        border-bottom: 7px solid #fffaf5;
+        border-top: 7px solid transparent;
+        border-left:7px solid #fffaf5;
+        border-right:7px solid transparent;
+  
+        /* border-bottom: 7px solid black;
+        border-top: 7px solid transparent;
+        border-left:7px solid black;
+        border-right:7px solid transparent; */
+  
+        position: absolute;
+        left: -3px;
+        top: 16px;
+        color:#404345;
+      }
+  
+      .music-audio {
+        height: 37px;
+      }
+  
+      .slide-right {
+        animation-name: slideRight;
+        animation-duration: 2s;
+      }
+  
+      .slide-left {
+        animation-name: slideLeft;
+        animation-duration: 2s;
+      }
+  
+      .show {
+        animation-name: show;
+        animation-duration: 2s;
+      }
+  
+      @-webkit-keyframes slideLeft {
+        0% {
+          opacity: 0;
+          margin-left: -250px;
+        }
+        100% {
+          opacity: 1;
+          margin-left: 0;
+        }
+      }
+      
+      @keyframes slideLeft {
+        0% {
+          opacity: 0;
+          margin-left: -250px;
+        }
+        100% {
+          opacity: 1;
+          margin-left: 0;
+        }
+      }
+  
+      /* slide right */
+  
+      @-webkit-keyframes slideRight {
+        0% {
+          opacity: 0;
+          margin-right: -100%;
+        }
+        100% {
+          opacity: 1;
+          margin-right: 0;
+        }
+      }
+      
+      @keyframes slideRight {
+        0% {
+          opacity: 0;
+          margin-right: -100%;
+        }
+        100% {
+          opacity: 1;
+          margin-right: 0;
+        }
+      }
+  
+      /* end slide right */
+  
+      /* muncul */
+      @-webkit-keyframes show {
+        0% {
+          opacity: 0;
+          margin-bottom: -10px;
+        }
+        100% {
+          opacity: 1;
+          margin-bottom: 0;
+        }
+      }
+      
+      @keyframes show {
+        0% {
+          opacity: 0;
+          margin-bottom: -10px;
+        }
+        100% {
+          opacity: 1;
+          margin-bottom: 0;
+        }
+      }
+      /* muncul */
+  }
