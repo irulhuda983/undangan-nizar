@@ -40,6 +40,8 @@ class HomeController extends Controller
             ['nama' => 'gal5', 'link' => asset('assets/img/nizar/foto-5.jpg')],
             ['nama' => 'gal6', 'link' => asset('assets/img/nizar/foto-6.JPG')],
             ['nama' => 'gal7', 'link' => asset('assets/img/nizar/foto-7.jpg')],
+            ['nama' => 'gal9', 'link' => asset('assets/img/nizar/foto-9.jpeg')],
+            ['nama' => 'gal10', 'link' => asset('assets/img/nizar/foto-10.jpeg')],
         ];
 
         $data = [
@@ -48,9 +50,9 @@ class HomeController extends Controller
             'background' => [
                 'body' => asset('assets/img/nizar/bg-cover.jpg'),
                 'cover' => $galery[1]['link'],
-                'depan' => $galery[3]['link'],
+                'depan' => asset('assets/img/nizar/bg-depan.jpg'),
                 'savedate' => asset('assets/img/nizar/bg-savedate.jpg'),
-                'kehadiran' => $galery[4]['link'],
+                'kehadiran' => asset('assets/img/nizar/foto-8.jpg'),
             ],
             'waktu' => [
                 'hari' => 'Selasa',
@@ -59,7 +61,7 @@ class HomeController extends Controller
                 'tahun' => '2024',
                 'tglText' => 'Selasa, 02 Juli 2024',
                 'tanggalLengkap' => '2024-07-02 12:30:00',
-                'linkKalender' => 'https://calendar.google.com/calendar/u/0/r/eventedit?text=Acara+Pernikahan+Nizar+dan+Adi&ctz=Asia/Jakarta&dates=20231022T120000/20240702T150000%7D&details=Acara+Pernikahan+Nizar+dan+Adi&location=Dusun+Kedungmas+RT.+009+RW.+002,+Ds.+Wotanngare+Kec.+kalitidu+Kab.+Bojonegoro+Jawa+Timur&sprop&sprop=name:',
+                'linkKalender' => 'https://calendar.google.com/calendar/u/0/r/eventedit?text=Acara+Pernikahan+Nizar+dan+Adi&ctz=Asia/Jakarta&dates=20240207T120000/20240702T150000%7D&details=Acara+Pernikahan+Nizar+dan+Adi&location=Dusun+Kedungmas+RT.+009+RW.+002,+Ds.+Wotanngare+Kec.+kalitidu+Kab.+Bojonegoro+Jawa+Timur&sprop&sprop=name:',
             ],
             'to' => $toName,
             'pengantinWanita' => [
@@ -90,7 +92,7 @@ class HomeController extends Controller
                     'bulan' => 'Juli',
                     'tahun' => '2024',
                     'tanggalLengkap' => '02 Juli 2024',
-                    'waktu' => '09.00 WIB',
+                    'waktu' => '10.00 WIB',
                     'lokasi' => 'Kediaman Mempelai Wanita',
                     'alamat' => 'Dusun Kedungmas RT. 009 RW. 002, Ds. Wotanngare, Kec. Kalitidu - Bojonegoro',
                     'maps' => 'https://maps.app.goo.gl/oHELGmZjwrepcoh39',
@@ -116,7 +118,14 @@ class HomeController extends Controller
                     'bankname' => 'Mandiri',
                     'atasnama' => 'AN. ANIZARUL KHOIRIYAH',
                     'icon' => asset('assets/img/mandiri.png'),
-                ]
+                ],
+                [
+                    'pemilik' => 'ANIZARUL KHOIRIYAH',
+                    'norek' => '085236400886',
+                    'bankname' => 'DANA',
+                    'atasnama' => 'AN. ANIZARUL KHOIRIYAH',
+                    'icon' => asset('assets/img/dana.png'),
+                ],
             ],
         ];
 
@@ -209,7 +218,14 @@ class HomeController extends Controller
                     'bankname' => 'Mandiri',
                     'atasnama' => 'AN. Dhanifatul Khamidah',
                     'icon' => asset('assets/img/mandiri.png'),
-                ]
+                ],
+                [
+                    'pemilik' => 'Dhanifatul Khamidah',
+                    'norek' => '085236400886',
+                    'bankname' => 'DANA',
+                    'atasnama' => 'AN. Dhanifatul Khamidah',
+                    'icon' => asset('assets/img/dana.png'),
+                ],
             ],
         ];
 

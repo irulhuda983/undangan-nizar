@@ -70,9 +70,9 @@
 
                 <div class="w-full flex items-center justify-center flex-col text-white pb-10">
                     <div class="mb-5">
-                        <div class="text-center text-5xl font-normal mb-5 font-dmsans tracking-[3px]">{{ $data['pengantinWanita']['namaPanggilan'] }} & {{ $data['pengantinPria']['namaPanggilan'] }}</div>
+                        <div style="text-shadow: 4px 1px 2px #00000050;" class="text-center text-5xl font-bold mb-5 font-dmsans tracking-[3px]">{{ $data['pengantinWanita']['namaPanggilan'] }} & {{ $data['pengantinPria']['namaPanggilan'] }}</div>
                         <div class="w-full lg:w-96 h-px bg-white mb-3"></div>
-                        <div class="text-center text-xl tracking-[5px] font-dmsans">{{ $data['waktu']['tgl'] }} <span>.</span> {{ $data['waktu']['bulan'] }} <span>.</span> {{ $data['waktu']['tahun'] }}</div>
+                        <div style="text-stroke: 1px #000; -webkit-text-stroke: 1px #000;" class="text-center text-xl font-bold tracking-[5px] font-dmsans">{{ $data['waktu']['tgl'] }} <span>.</span> {{ $data['waktu']['bulan'] }} <span>.</span> {{ $data['waktu']['tahun'] }}</div>
                     </div>
 
                     <div class="w-64 lg:w-96 flex items-center justify-center flex-col bg-white/10 rounded-lg backdrop-blur py-3 mb-5">
@@ -119,7 +119,7 @@
                 </div>
                 
                 <div class="text-center text-[#404345]">
-                    <h1 class="font-dancing text-5xl font-bold text-[#8a8a8a] mb-2">{{ $data['pengantinWanita']['namaLengkap'] }}</h1>
+                    <h1 class="font-dancing text-5xl font-bold text-[#404345] mb-2">{{ $data['pengantinWanita']['namaLengkap'] }}</h1>
                     <p class="font-semibold text-xl">Putri dari</p>
                     <p class="text-xl">
                         {{ $data['pengantinWanita']['ayah'] }}
@@ -145,7 +145,7 @@
                 </div>
                 
                 <div class="text-center text-[#404345]">
-                    <h1 class="font-dancing text-5xl font-bold text-[#8a8a8a] mb-2">{{ $data['pengantinPria']['namaLengkap'] }}</h1>
+                    <h1 class="font-dancing text-5xl font-bold text-[#404345] mb-2">{{ $data['pengantinPria']['namaLengkap'] }}</h1>
                     <p class="font-semibold text-xl">Putra dari</p>
                     <p class="text-xl">
                         {{ $data['pengantinPria']['ayah'] }}
@@ -169,8 +169,9 @@
                     <div class="swiper-wrapper mb-5">
                         @foreach($data['gallery'] as $item)
                         <div class="swiper-slide">
-                            <div class="w-[480px] h-[480px] box-border overflow-hidden flex items-center justify-center">
-                                <img src="{{ $item['link'] }}" class="w-full" />
+                            <div class="w-[480px] h-[480px] box-border overflow-hidden flex items-start justify-center relative">
+                                <img src="{{ $item['link'] }}" class="w-full blur-md" />
+                                <img src="{{ $item['link'] }}" class="h-full absolute" />
                             </div>
                         </div>
                         @endforeach
@@ -237,7 +238,7 @@
                     <img src="{{ $data['rundown']['akad']['foto'] }}" class="w-full" alt="">
                 </div>
                 <div class="flex items-stretch justify-center">
-                    <div class="flex-none w-32 bg-emerald-400 text-center flex items-center justify-center">
+                    <div class="flex-none w-32 bg-[#a2896b] text-center flex items-center justify-center">
                         <p class="text-white text-center text-5xl tracking-[5px] font-dancing" style="writing-mode: vertical-rl; transform: rotate(180deg);">Akad Nikah</p>
                     </div>
     
@@ -282,7 +283,7 @@
                             {{ $data['rundown']['resepsi']['alamat'] }}
                         </p>
                     </div>
-                    <div class="flex-none w-32 bg-emerald-400 text-center flex items-center justify-center">
+                    <div class="flex-none w-32 bg-[#a2896b] text-center flex items-center justify-center">
                         <p class="text-white text-center text-5xl tracking-[5px] font-dancing" style="writing-mode: vertical-rl;">Resepsi</p>
                     </div>
                 </div>
